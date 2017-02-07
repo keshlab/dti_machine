@@ -14,6 +14,9 @@ _If you haven't created a keypair yet, now is a good time to do so_
 
 Assign a key pair and launch the instance.
 
+Before you do anything else, go to the AWS Console -> EC2 -> Instances and select your new instance; go to 
+Actions -> Instance Settings -> Change Shutdown Behavior and make sure that 'Stop' is selected.
+
 #### Step 2: SSH into your EC2 Instance
 
 Go to your AWS Console -> EC2 -> Instances
@@ -69,7 +72,7 @@ You should see `options nouveau modeset=0`
 Reboot the system
 ```
 sudo update-initramfs -u
-reboot
+sudo reboot
 ```
 
 Install the Kernel source
