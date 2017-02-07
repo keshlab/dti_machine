@@ -67,8 +67,10 @@ Then disable the kernel nouveau
 You should see `options nouveau modeset=0`
 
 Reboot the system
-`sudo update-initramfs -u`
-`reboot`
+```
+sudo update-initramfs -u
+reboot
+```
 
 Install the Kernel source
 ```
