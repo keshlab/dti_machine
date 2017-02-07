@@ -127,7 +127,12 @@ deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 6.5, CUDA Runtime Versi
 Result = PASS
 ```
 
-Step 5: Install FSL from source
+#### Step 5: Install FSL from source
+
+Enter the following to download the fsl source code to the machine
+```
+curl --header 'Host: fsl.fmrib.ox.ac.uk' --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:50.0) Gecko/20100101 Firefox/50.0' --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' --header 'Accept-Language: en-US,en;q=0.5' --header 'Referer: https://fsl.fmrib.ox.ac.uk/fsldownloads/fsldownloadmain.html' --header 'Connection: keep-alive' --header 'Upgrade-Insecure-Requests: 1' 'https://fsl.fmrib.ox.ac.uk/fsldownloads/fsl-5.0.9-sources.tar.gz' -o 'fsl-5.0.9-sources.tar.gz' -L
+```
 
 #### Step 6: Expand the space on your machine
 
@@ -171,8 +176,6 @@ SSH back into your machine (See Step 2 above; note the IP address may have chang
 Type `df -h` on the Console to see the free space (look at the /dev/xvda1 line).
 
 Step 7: Install Dropbox (optional)
-
-
 
 
 
