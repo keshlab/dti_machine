@@ -165,6 +165,14 @@ cd $FSLDIR
 make install
 ```
 
+Apply patches
+
+Download patches from FSL
+
+```
+
+```
+
 Move FSLDIR to /usr/local
 ```
 sudo mv . /usr/local/
