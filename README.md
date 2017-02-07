@@ -92,9 +92,12 @@ Load the nvidia kernel module
 
 `sudo modprobe nvidia`
 
-Run CUDA + samples installer
+Run CUDA installer
 ```
 sudo ./cuda-linux64-rel-6.5.14-18749181.run
+```
+Optional: Run samples installer
+```
 sudo ./cuda-samples-linux-6.5.14-18745345.run
 ```
 
