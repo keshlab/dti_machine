@@ -26,4 +26,14 @@ Open a terminal and type the SSH command to connect. e.g.:
 
 `ssh -i "keypair.pem" ubuntu@ec2-01-001-1-01.computer-1.amazonaws.com`
 
-Step 3: Update the OS
+Step 3: Prepare the OS
+
+Check for updates to pre-installed packages
+`sudo apt-get update`
+
+Install tools for compiling new drivers/software
+`sudo apt-get install build-essential`
+
+Get CUDA Installer:
+`wget http://developer.download.nvidia.com/compute/cuda/6_5/rel/installers/cuda_6.5.14_linux_64.run
+`
