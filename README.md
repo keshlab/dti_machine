@@ -131,6 +131,45 @@ Step 5: Install FSL from source
 
 Step 6: Expand the space on your machine
 
+To expand the space on your machine (A likely necessity because the default attached storage limit is 8GB),
+you need to first shutdown the machine. _Before you to this, please ensure that you've changed the shutdown behavior
+as in Step 1.
+
+Take note of the "Availability Zone" for the machine.
+
+Once the machine is stopped. Go to the AWS Console -> EC2 -> Volumes
+
+Find the volume attached to your instance (use the Created date field for help) and select it
+
+Rename it to `dti-machine-small` to make it easier to identify later
+
+Go to Actions -> Detach Volume
+
+Once the volume has been detached, select it again and go to Actions -> Create Snapshot
+
+Name the snapshot `dti-machine-small` and click Create
+
+Go to AWS Console -> EC2 -> Snapshots
+
+The snapshot make take some time.
+
+Once the `dti-machine-small` snapshot is ready, select it and go to Actions -> Create Volume
+
+Select the size you desire, and the Availability Zone you noted earlier from the machine, and
+press Create
+
+Go back to AWS Console -> EC2 -> Volumes
+
+Once the volume is created, select it and go to Actions -> Attach Volume
+
+Click in the Instance field and select your Instance, select `/dev/sda1` for the Device and press Attach
+
+Go back to AWS Console -> EC2 -> Instances and restart your instance (select and go to Actions -> Instance State -> Start)
+
+SSH back into your machine (See Step 2 above; note the IP address may have changed).
+
+Type `df -h` on the Console to see the free space (look at the /dev/xvda1 line).
+
 Step 7: Install Dropbox (optional)
 
 
