@@ -159,6 +159,29 @@ cd $FSLDIR
 make install
 ```
 
+Move FSLDIR to /usr/local
+```
+sudo mv . /usr/local/
+```
+
+Add the following to your `~/.bash_profile`:
+```{bash}
+FSLDIR=/usr/local/fsl
+. ${FSLDIR}/etc/fslconf/fsl.sh
+PATH=${FSLDIR}/bin:${PATH}
+export FSLDIR PATH
+```
+
+Then source the file to update the path in the current environment
+```{bash}
+source ~/.bash_profile
+```
+
+Test FSL
+```{bash}
+fslinfo
+```
+
 #### Step 6: Expand the space on your machine
 
 To expand the space on your machine (A likely necessity because the default attached storage limit is 8GB),
