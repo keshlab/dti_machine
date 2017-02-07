@@ -132,7 +132,7 @@ Prep the environment
 
 `sudo ln -s /usr/lib/install /usr/local/lib/ginstall`
 
-`sudo apt-get install libx11 libx11-dev`
+`sudo apt-get install libx11-dev`
 
 Enter the following to download the fsl source code to the machine
 ```{bash}
