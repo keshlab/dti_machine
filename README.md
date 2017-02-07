@@ -115,7 +115,7 @@ Open your `~/.bash_profile` file and add the following lines:
 
 To include these environment variables in your current environment, run `source ~/.bash_profile`
 
-Verify CUDA is correctly installed
+Verify CUDA is correctly installed (Only if Optional samples files were installed. See above.)
 ```
 cd /usr/local/cuda/samples/1_Utilities/deviceQuery
 make
