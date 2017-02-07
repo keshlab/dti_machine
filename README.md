@@ -165,13 +165,14 @@ cd $FSLDIR
 make install
 ```
 
-Apply patches
-
 Download patches from FSL
 
 ```
-
+wget http://fsl.fmrib.ox.ac.uk/fsldownloads/patches/bedpostx-patch-fsl-5.0.9.tar.gz
+wget http://fsl.fmrib.ox.ac.uk/fsldownloads/patches/eddy-patch-fsl-5.0.9/centos6/eddy_cuda6.5
 ```
+
+Extract the contents and copy/move them into ${FSLDIR}/bin
 
 Move FSLDIR to /usr/local
 ```
