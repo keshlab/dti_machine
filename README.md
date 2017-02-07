@@ -130,8 +130,33 @@ Result = PASS
 #### Step 5: Install FSL from source
 
 Enter the following to download the fsl source code to the machine
-```
+```{bash}
 curl --header 'Host: fsl.fmrib.ox.ac.uk' --header 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:50.0) Gecko/20100101 Firefox/50.0' --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' --header 'Accept-Language: en-US,en;q=0.5' --header 'Referer: https://fsl.fmrib.ox.ac.uk/fsldownloads/fsldownloadmain.html' --header 'Connection: keep-alive' --header 'Upgrade-Insecure-Requests: 1' 'https://fsl.fmrib.ox.ac.uk/fsldownloads/fsl-5.0.9-sources.tar.gz' -o 'fsl-5.0.9-sources.tar.gz' -L
+```
+
+```{bash}
+mkdir ~/fslbuild
+mv <filenamehere>.tar.gz ~/fslbuild
+cd ~/fslbuild
+tar zxf <filenamehere>.tar.gz
+```
+
+```{bash}
+export FSLDIR=`pwd`/fsl
+. ${FSLDIR}/etc/fslconf/fsl.sh
+```
+
+```{bash}
+ls $FSLDIR/config/$FSLMACHTYPE
+```
+
+```{bash}
+cd $FSLDIR
+./build
+```
+
+```{bash}
+make install
 ```
 
 #### Step 6: Expand the space on your machine
