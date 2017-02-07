@@ -2,7 +2,7 @@
 
 ## Notes on setting up a DTI machine on AWS
 
-Step 1: Create an AWS EC2 Instance
+#### Step 1: Create an AWS EC2 Instance
 
 You need to go to the AWS Console -> EC2 -> Launch Instance
 
@@ -14,7 +14,7 @@ _If you haven't created a keypair yet, now is a good time to do so_
 
 Assign a key pair and launch the instance.
 
-Step 2: SSH into your EC2 Instance
+#### Step 2: SSH into your EC2 Instance
 
 Go to your AWS Console -> EC2 -> Instances
 
@@ -26,13 +26,14 @@ Open a terminal and type the SSH command to connect. e.g.:
 
 `ssh -i "keypair.pem" ubuntu@ec2-01-001-1-01.computer-1.amazonaws.com`
 
-Step 3: Prepare the OS
+#### Step 3: Prepare the OS
 
 Check for updates to pre-installed packages
 `sudo apt-get update`
 
 Install tools for compiling new drivers/software
 `sudo apt-get install build-essential`
+
 `sudo apt-get install linux-image-extra-virtual`
 
 Get CUDA Installer
@@ -72,7 +73,7 @@ sudo apt-get install linux-source
 sudo apt-get install linux-headers-`uname -r`
 ```
 
-Step 4: Install NVIDIA drivers
+#### Step 4: Install NVIDIA drivers
 
 ```{bash}
 cd nvidia_installers
