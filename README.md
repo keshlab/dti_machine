@@ -152,6 +152,7 @@ export FSLDIR=`pwd`/fsl
 ```
 
 ```{bash}
+export FSLMACHTYPE=linux_64-gcc4.4
 ls $FSLDIR/config/$FSLMACHTYPE
 ```
 
