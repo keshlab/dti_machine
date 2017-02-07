@@ -129,7 +129,7 @@ Result = PASS
 
 Step 5: Install FSL from source
 
-Step 6: Expand the space on your machine
+#### Step 6: Expand the space on your machine
 
 To expand the space on your machine (A likely necessity because the default attached storage limit is 8GB),
 you need to first shutdown the machine. _Before you to this, please ensure that you've changed the shutdown behavior
@@ -185,3 +185,6 @@ Step 7: Install Dropbox (optional)
 
 #### For installing CUDA
 http://tleyden.github.io/blog/2014/10/25/cuda-6-dot-5-on-aws-gpu-instance-running-ubuntu-14-dot-04/
+
+#### Storage expansion
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-expand-volume.html
