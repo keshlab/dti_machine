@@ -64,6 +64,8 @@ Then disable the kernel nouveau
 
 `echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf`
 
+You should see `options nouveau modeset=0`
+
 Reboot the system
 `sudo update-initramfs -u`
 `reboot`
