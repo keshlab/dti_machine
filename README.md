@@ -228,6 +228,9 @@ SSH back into your machine (See Step 2 above; note the IP address may have chang
 
 Type `df -h` on the Console to see the free space (look at the /dev/xvda1 line).
 
+Once you've confirmed that your expanded volume is attached correctly, you can
+go back to AWS Console -> EC2 -> Volumes and delete `dti-machine-small`.
+
 Step 7: Install Dropbox (optional)
 
 
