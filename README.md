@@ -112,7 +112,9 @@ Result = PASS
 
 Step 5: Install FSL from source
 
-Step 6: Install Dropbox (optional)
+Step 6: Expand the space on your machine
+
+Step 7: Install Dropbox (optional)
 
 
 
