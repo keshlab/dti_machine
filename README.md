@@ -132,7 +132,7 @@ Prep the environment
 
 `sudo ln -s /usr/lib/install /usr/local/lib/ginstall`
 
-`sudo apt-get install libx11-dev`
+`sudo apt-get install libx11-dev libgd-tools`
 
 Enter the following to download the fsl source code to the machine
 ```{bash}
@@ -238,6 +238,7 @@ Step 7: Install Dropbox (optional)
 #### For installing Dropbox
 
 #### For installing FSL from source
+https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/SourceCode
 
 #### For installing CUDA
 http://tleyden.github.io/blog/2014/10/25/cuda-6-dot-5-on-aws-gpu-instance-running-ubuntu-14-dot-04/
