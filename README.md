@@ -98,6 +98,20 @@ sudo ./cuda-linux64-rel-6.5.14-18749181.run
 sudo ./cuda-samples-linux-6.5.14-18745345.run
 ```
 
+Set up the environment paths for CUDA
+
+Open your `~/.bash_profile` file and add the following lines:
+```{bash}
+ CUDA_HOME=/usr/local/cuda-6.5
+ LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+ export LD_LIBRARY_PATH
+ 
+ PATH=${CUDA_HOME}/bin:${PATH}
+ export PATH
+```
+
+To include these environment variables in your current environment, run `source ~/.bash_profile`
+
 Verify CUDA is correctly installed
 ```
 cd /usr/local/cuda/samples/1_Utilities/deviceQuery
