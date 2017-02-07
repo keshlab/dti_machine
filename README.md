@@ -85,17 +85,17 @@ sudo apt-get install linux-headers-`uname -r`
 
 ```{bash}
 cd nvidia_installers
-./NVIDIA-Linux-x86_64-340.29.run
+sudo ./NVIDIA-Linux-x86_64-340.29.run
 ```
 
 Load the nvidia kernel module
 
-`modprove nvidia`
+`sudo modprobe nvidia`
 
 Run CUDA + samples installer
 ```
-./cuda-linux64-rel-6.5.14-18749181.run
-./cuda-samples-linux-6.5.14-18745345.run
+sudo ./cuda-linux64-rel-6.5.14-18749181.run
+sudo ./cuda-samples-linux-6.5.14-18745345.run
 ```
 
 Verify CUDA is correctly installed
