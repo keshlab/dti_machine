@@ -32,9 +32,10 @@ Check for updates to pre-installed packages
 `sudo apt-get update`
 
 Install tools for compiling new drivers/software
-`sudo apt-get install build-essential`
-
-`sudo apt-get install linux-image-extra-virtual`
+```
+sudo apt-get install build-essential
+sudo apt-get install linux-image-extra-virtual
+```
 
 Get CUDA Installer
 `wget http://developer.download.nvidia.com/compute/cuda/6_5/rel/installers/cuda_6.5.14_linux_64.run`
