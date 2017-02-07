@@ -84,9 +84,37 @@ Load the nvidia kernel module
 `modprove nvidia`
 
 Run CUDA + samples installer
+```
+./cuda-linux64-rel-6.5.14-18749181.run
+./cuda-samples-linux-6.5.14-18745345.run
+```
 
 Verify CUDA is correctly installed
+```
+cd /usr/local/cuda/samples/1_Utilities/deviceQuery
+make
+./deviceQuery   
+```
+You should see the following output:
+```
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 6.5, CUDA Runtime Version = 6.5, NumDevs = 1, Device0 = GRID K520
+Result = PASS
+```
 
 Step 5: Install FSL from source
 
 Step 6: Install Dropbox (optional)
+
+
+
+
+
+
+## References:
+
+#### For installing Dropbox
+
+#### For installing FSL from source
+
+#### For installing CUDA
+http://tleyden.github.io/blog/2014/10/25/cuda-6-dot-5-on-aws-gpu-instance-running-ubuntu-14-dot-04/
