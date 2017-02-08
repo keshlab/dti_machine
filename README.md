@@ -243,12 +243,37 @@ go back to AWS Console -> EC2 -> Volumes and delete `dti-machine-small`.
 
 Step 7: Install Dropbox (optional)
 
+Get dropbox and begin the background process
+```{bash}
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+```
+Dropbox will ask you to validate your login. Once you do this, it will begin syncing _all_ your folders.
+To arrest this behavior, quickly follow the next step:
 
+Get dropbox.py for controlling the dropbox background process (daemon)
+```{bash}
+get -O ~/bin/dropbox.py "https://www.dropbox.com/download?dl=packages/dropbox.py"
+chmod +x ~/bin/dropbox.py
+```
 
+Change directory to dropbox and exclude folders from syncing
+
+```{bash}
+cd ~/Dropbox
+~/bin/dropbox.py exclude add *
+```
+
+Selectively un-exclude the folders you want to sync
+```{bash}
+~/bin/dropbox.py exclude remove <folder you want to sync>
+```
 
 ## References:
 
 #### For installing Dropbox
+https://www.dropbox.com/install-linux
+http://www.dropboxwiki.com/tips-and-tricks/using-the-official-dropbox-command-line-interface-cli
 
 #### For installing FSL from source
 https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/SourceCode
