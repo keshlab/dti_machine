@@ -253,6 +253,7 @@ To arrest this behavior, quickly follow the next step:
 
 Get dropbox.py for controlling the dropbox background process (daemon)
 ```{bash}
+mkdir -p ~/bin
 get -O ~/bin/dropbox.py "https://www.dropbox.com/download?dl=packages/dropbox.py"
 chmod +x ~/bin/dropbox.py
 ```
