@@ -132,7 +132,7 @@ Prep the environment
 
 `sudo ln -s /usr/lib/install /usr/local/lib/ginstall`
 
-`sudo apt-get install libx11-dev libgd-dev libgd2-noxpm-dev mesa-common-dev libglu1-mesa-dev freeglut3-dev`
+`sudo apt-get install libx11-dev libgd-dev libgd2-noxpm-dev mesa-common-dev libglu1-mesa-dev freeglut3-dev dc`
 
 Enter the following to download the fsl source code to the machine
 ```{bash}
